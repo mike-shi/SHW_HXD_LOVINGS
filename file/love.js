@@ -173,6 +173,8 @@
             ctx.restore();
         },
         clear: function() {
+            var bgAudio = document.getElementById('mp3');
+            bgAudio.play();
             var ctx = this.tree.ctx, cirle = this.cirle;
             var point = cirle.point, scale = cirle.scale, radius = 26;
             var w = h = (radius * scale);
